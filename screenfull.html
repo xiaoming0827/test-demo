@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fullscreen</title>
+</head>
+<body style="background: pink;">
+    <button id="bt">哦点击我全屏哦！</button>
+    <button id="btq">点击我推出全屏</button>
+    <div style="width: 200px;height: 300px;border: 1px solid red;float: left;"></div>
+
+    <script type="text/javascript" src='./css-js/fullscreen/screenfull.js'></script>
+    <script>
+        document.getElementById('bt').addEventListener('click',function (event) {
+            event.preventDefault();
+            if (screenfull.enabled) {
+                screenfull.request();
+            } else {
+                // Ignore or do something else
+            }
+        })
+
+        document.getElementById('btq').addEventListener('click',function (event) {
+            event.preventDefault();
+            if(screenfull.enabled){
+                screenfull.exit();
+            }else{
+
+            }
+        })
+
+
+    </script>
+
+</body>
+</html>

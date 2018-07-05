@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-bind</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p v-bind:class="cla">{{message}}</p>
+    </div>
+    <style type="text/css">
+        .spe{
+            color: red;
+        }
+    </style>
+    <script type="text/javascript">
+        var app = new Vue({
+            el:'#app',
+            data:{
+                cla:'spe',
+                message:'hello'
+            }
+        })
+
+        setTimeout(function () {
+            $('#app').find('p').html('world');
+        },5000)
+
+    </script>
+</body>
+</html>

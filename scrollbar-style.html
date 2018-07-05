@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scrollbar-style</title>
+</head>
+<body style="height: 1500px;background: pink;">
+<!--以下代码仅仅在chrome浏览器里面生效，IE和火狐都无效-->
+<style>
+    /*以下代码仅仅在chrome浏览器里面生效，IE和火狐都无效*/
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        background-color: #f5f5f5
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        border-radius: 10px;
+        background-color: #f5f5f5
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: rgba(0,0,0,.3)
+    }
+</style>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Odometerjs</title>
+    <link rel="stylesheet" href="./css-js/odometer/odometer-theme-default.css">
+</head>
+<body>
+    <div>
+        <span class="odometer">123</span>
+    </div>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.js"></script>
+    <script type="text/javascript" src="./css-js/odometer/odometer.min.js"></script>
+    <script type="text/javascript">
+        setInterval(function () {
+            var num = Math.ceil(Math.random()*10000)
+            $('.odometer').html(num);
+        },3500)
+    </script>
+</body>
+</html>
